@@ -1,0 +1,10 @@
+extends layout
+
+block content
+ ul
+  each val in messages
+    li 
+      div 
+        p #{val.user}
+        p #{val.text}
+        p #{val.added}
